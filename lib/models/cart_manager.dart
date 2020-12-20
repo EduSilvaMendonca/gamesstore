@@ -82,9 +82,10 @@ class CartManager extends ChangeNotifier {
   }
 
   void _updateCartProduct(CartProduct cartProduct){
-    if(cartProduct.id != null)
+    if(cartProduct.id != null) {
       user.cartReference.document(cartProduct.id)
           .updateData(cartProduct.toCartItemMap());
+    }
   }
 
   bool get isCartValid {
@@ -125,7 +126,7 @@ class CartManager extends ChangeNotifier {
     this.address = address;
 
     if(await calculateDelivery(address.lat, address.long)){
-      print('price $deliveryPrice');
+      debugPrint('price $deliveryPrice');
       notifyListeners();
     } else {
       return Future.error('Endereço fora do raio de entrega :(');

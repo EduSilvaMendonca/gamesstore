@@ -69,7 +69,7 @@ class ProductsScreen extends StatelessWidget {
             builder: (_, userManager, __){
               if(userManager.adminEnabled){
                 return IconButton(
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                   onPressed: (){
                     Navigator.of(context).pushNamed(
                         '/edit_product',
@@ -101,7 +101,7 @@ class ProductsScreen extends StatelessWidget {
         onPressed: (){
           Navigator.of(context).pushNamed('/cart');
         },
-        child: Icon(Icons.shopping_cart),
+        child: const Icon(Icons.shopping_cart),
       ),
     );
   }

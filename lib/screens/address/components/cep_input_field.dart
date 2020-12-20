@@ -30,15 +30,16 @@ class CepInputField extends StatelessWidget {
                 hintText: '12.345-678'
             ),
             inputFormatters: [
-              WhitelistingTextInputFormatter.digitsOnly,
+              FilteringTextInputFormatter.digitsOnly,
               CepInputFormatter(),
             ],
             keyboardType: TextInputType.number,
             validator: (cep){
-              if(cep.isEmpty)
+              if(cep.isEmpty) {
                 return 'Campo obrigatório';
-              else if(cep.length != 10)
+              } else if(cep.length != 10) {
                 return 'CEP Inválido';
+              }
               return null;
             },
           ),
@@ -55,7 +56,7 @@ class CepInputField extends StatelessWidget {
           ),
         ],
       );
-    } else
+    } else {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 4),
         child: Row(
@@ -80,5 +81,6 @@ class CepInputField extends StatelessWidget {
           ],
         ),
       );
+    }
   }
 }
