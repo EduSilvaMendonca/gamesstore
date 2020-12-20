@@ -77,10 +77,9 @@ class CartManager extends ChangeNotifier {
   }
 
   void _updateCartProduct(CartProduct cartProduct){
-    if(cartProduct.id != null) {
+    if(cartProduct.id != null)
       user.cartReference.document(cartProduct.id)
           .updateData(cartProduct.toCartItemMap());
-    }
   }
 
   bool get isCartValid {
@@ -89,6 +88,8 @@ class CartManager extends ChangeNotifier {
     }
     return true;
   }
+
+  // ADDRESS
 
   Future<void> getAddress(String cep) async {
     final cepAbertoService = CepAbertoService();
@@ -112,4 +113,10 @@ class CartManager extends ChangeNotifier {
       debugPrint(e.toString());
     }
   }
+
+  void removeAddress(){
+    address = null;
+    notifyListeners();
+  }
+
 }

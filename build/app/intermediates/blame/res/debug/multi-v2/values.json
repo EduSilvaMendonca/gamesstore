@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\projetos\\gamestore\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\projetos\\gamestore1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Eduardo\\.gradle\\caches\\transforms-2\\files-2.1\\d709473e4641729306afeed89b4c16e1\\ucrop-2.2.6\\res\\values\\values.xml",
@@ -42,22 +42,20 @@
                     }
                 },
                 {
-                    "source": "C:\\projetos\\gamestore\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\projetos\\gamestore1\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "137,791",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "433,953"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,313,395,499,608,728,831",
+                        "endColumns": "143,113,81,103,108,119,102,79",
+                        "endOffsets": "194,308,390,494,603,723,826,906"
                     },
                     "to": {
-                        "startLines": "1453,1458",
-                        "startColumns": "4,4",
-                        "startOffsets": "95974,96271",
-                        "endLines": "1457,1460",
-                        "endColumns": "12,12",
-                        "endOffsets": "96266,96431"
+                        "startLines": "361,362,363,364,365,366,367,368",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "24952,25096,25210,25292,25396,25505,25625,25728",
+                        "endColumns": "143,113,81,103,108,119,102,79",
+                        "endOffsets": "25091,25205,25287,25391,25500,25620,25723,25803"
                     }
                 },
                 {
@@ -97,20 +95,39 @@
                     }
                 },
                 {
-                    "source": "C:\\projetos\\gamestore\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "source": "C:\\Users\\Eduardo\\.gradle\\caches\\transforms-2\\files-2.1\\9b89b7ff4a662e4af1c037c678e6ac5c\\jetified-play-services-basement-17.0.0\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,313,395,499,608,728,831",
-                        "endColumns": "143,113,81,103,108,119,102,79",
-                        "endOffsets": "194,308,390,494,603,723,826,906"
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
                     },
                     "to": {
-                        "startLines": "361,362,363,364,365,366,367,368",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "24952,25096,25210,25292,25396,25505,25625,25728",
-                        "endColumns": "143,113,81,103,108,119,102,79",
-                        "endOffsets": "25091,25205,25287,25391,25500,25620,25723,25803"
+                        "startLines": "313,351",
+                        "startColumns": "4,4",
+                        "startOffsets": "20547,23659",
+                        "endColumns": "67,166",
+                        "endOffsets": "20610,23821"
+                    }
+                },
+                {
+                    "source": "C:\\projetos\\gamestore1\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "137,791",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "433,953"
+                    },
+                    "to": {
+                        "startLines": "1453,1458",
+                        "startColumns": "4,4",
+                        "startOffsets": "95974,96271",
+                        "endLines": "1457,1460",
+                        "endColumns": "12,12",
+                        "endOffsets": "96266,96431"
                     }
                 },
                 {
@@ -149,23 +166,6 @@
                         "endLines": "2087,2094,2105,3176,3181",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "141668,142053,142650,198660,198930"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Eduardo\\.gradle\\caches\\transforms-2\\files-2.1\\f56bacd903c6828d5078af847fb2b135\\jetified-play-services-basement-17.0.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
-                    },
-                    "to": {
-                        "startLines": "313,351",
-                        "startColumns": "4,4",
-                        "startOffsets": "20547,23659",
-                        "endColumns": "67,166",
-                        "endOffsets": "20610,23821"
                     }
                 }
             ]
