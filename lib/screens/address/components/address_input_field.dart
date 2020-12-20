@@ -17,7 +17,7 @@ class AddressInputField extends StatelessWidget {
     String emptyValidator(String text) =>
         text.isEmpty ? 'Campo obrigatório' : null;
 
-    if(address.zipCode != null)
+    if(address.zipCode != null) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -125,17 +125,26 @@ class AddressInputField extends StatelessWidget {
             color: primaryColor,
             disabledColor: primaryColor.withAlpha(100),
             textColor: Colors.white,
-            onPressed: (){
+            onPressed: () async {
               if(Form.of(context).validate()){
                 Form.of(context).save();
-                context.read<CartManager>().setAddress(address);
+                try {
+                  await context.read<CartManager>().setAddress(address);
+                } catch (e){
+                  Scaffold.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('$e'),
+                        backgroundColor: Colors.red,
+                      )
+                  );
+                }
               }
             },
             child: const Text('Calcular Frete'),
           ),
         ],
       );
-    else
+    } else
       return Container();
   }
 }
