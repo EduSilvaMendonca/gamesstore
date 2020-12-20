@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:lojavirtual2/models/address.dart';
 import 'package:lojavirtual2/models/cart_product.dart';
-import 'package:lojavirtual2/models/cepaberto_address.dart';
 import 'package:lojavirtual2/models/product.dart';
 import 'package:lojavirtual2/models/user.dart';
 import 'package:lojavirtual2/models/user_manager.dart';
@@ -18,6 +17,8 @@ class CartManager extends ChangeNotifier {
 
   num productsPrice = 0.0;
   num deliveryPrice;
+
+  num get totalPrice => productsPrice + (deliveryPrice ?? 0);
 
   final Firestore firestore = Firestore.instance;
 
@@ -93,6 +94,8 @@ class CartManager extends ChangeNotifier {
     return true;
   }
 
+  bool get isAddressValid => address != null && deliveryPrice != null;
+
   // ADDRESS
 
   Future<void> getAddress(String cep) async {
@@ -123,6 +126,7 @@ class CartManager extends ChangeNotifier {
 
     if(await calculateDelivery(address.lat, address.long)){
       print('price $deliveryPrice');
+      notifyListeners();
     } else {
       return Future.error('Endereço fora do raio de entrega :(');
     }

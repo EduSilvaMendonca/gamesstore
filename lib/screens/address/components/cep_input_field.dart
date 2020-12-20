@@ -18,7 +18,7 @@ class CepInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     final primaryColor = Theme.of(context).primaryColor;
 
-    if(address.zipCode == null)
+    if(address.zipCode == null) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -55,7 +55,7 @@ class CepInputField extends StatelessWidget {
           ),
         ],
       );
-    else
+    } else
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 4),
         child: Row(

@@ -13,7 +13,6 @@ import 'package:lojavirtual2/screens/login/login_screen.dart';
 import 'package:lojavirtual2/screens/product/product_screen.dart';
 import 'package:lojavirtual2/screens/select_product/select_product_screen.dart';
 import 'package:lojavirtual2/screens/signup/signup_screen.dart';
-import 'package:lojavirtual2/services/cepaberto_service.dart';
 import 'package:provider/provider.dart';
 
 void main() {
